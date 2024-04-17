@@ -1,0 +1,75 @@
+<mxfile host="app.diagrams.net" modified="2024-04-17T05:46:30.834Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:124.0) Gecko/20100101 Firefox/124.0" etag="2UNqbhPxTN7tA-bKfvNq" version="24.2.5" type="github">
+  <diagram name="Page-1" id="57F013TZSbhwvBVwvkh1">
+    <mxGraphModel dx="458" dy="615" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bu5iTPpGUUyw0LDB3Mps-1" value="&lt;div&gt;Network Interface&lt;/div&gt;&lt;div&gt;~layer 3 config, redet über IP-Adressen&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="110" width="140" height="128" as="geometry">
+            <mxRectangle x="310" y="180" width="130" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bu5iTPpGUUyw0LDB3Mps-2" value="addresses" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="bu5iTPpGUUyw0LDB3Mps-1">
+          <mxGeometry y="50" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="bu5iTPpGUUyw0LDB3Mps-3" value="&lt;div&gt;vlan_id&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="bu5iTPpGUUyw0LDB3Mps-1">
+          <mxGeometry y="76" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="bu5iTPpGUUyw0LDB3Mps-15" value="&lt;div&gt;link&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="bu5iTPpGUUyw0LDB3Mps-1">
+          <mxGeometry y="102" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="bu5iTPpGUUyw0LDB3Mps-5" value="VLAN" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="180" width="140" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="bu5iTPpGUUyw0LDB3Mps-6" value="id: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="bu5iTPpGUUyw0LDB3Mps-5">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="bu5iTPpGUUyw0LDB3Mps-19" value="&lt;div&gt;mtu&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="bu5iTPpGUUyw0LDB3Mps-5">
+          <mxGeometry y="52" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="bu5iTPpGUUyw0LDB3Mps-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="bu5iTPpGUUyw0LDB3Mps-3" target="bu5iTPpGUUyw0LDB3Mps-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bu5iTPpGUUyw0LDB3Mps-11" value="&lt;div&gt;Link&lt;/div&gt;&lt;div&gt;~layer 2 config&lt;/div&gt;&lt;div&gt;redet über MAC-Adressen, stellt &quot;physische&quot; Verbindungen her&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=80;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="390" width="160" height="158" as="geometry" />
+        </mxCell>
+        <mxCell id="bu5iTPpGUUyw0LDB3Mps-12" value="type: ether, vxlan, vlan, bmc" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="bu5iTPpGUUyw0LDB3Mps-11">
+          <mxGeometry y="80" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="bu5iTPpGUUyw0LDB3Mps-24" value="external identifier" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="bu5iTPpGUUyw0LDB3Mps-11">
+          <mxGeometry y="106" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="bu5iTPpGUUyw0LDB3Mps-17" value="mac: ..." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="bu5iTPpGUUyw0LDB3Mps-11">
+          <mxGeometry y="132" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="bu5iTPpGUUyw0LDB3Mps-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="bu5iTPpGUUyw0LDB3Mps-15" target="bu5iTPpGUUyw0LDB3Mps-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bu5iTPpGUUyw0LDB3Mps-18" value="unklare zuordnung" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="580" width="140" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="bu5iTPpGUUyw0LDB3Mps-21" value="priority? (routing -&amp;gt; layer 3)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="bu5iTPpGUUyw0LDB3Mps-18">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="bu5iTPpGUUyw0LDB3Mps-22" value="priority? (routing -&amp;gt; layer 3)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="642" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="bu5iTPpGUUyw0LDB3Mps-23" value="priority? (routing -&amp;gt; layer 3)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="710" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="bu5iTPpGUUyw0LDB3Mps-25" value="personality" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="492" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="bu5iTPpGUUyw0LDB3Mps-26" value="policy: tagged, untagged, bmc, ..." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="320" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bu5iTPpGUUyw0LDB3Mps-20" value="bridged?" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="510" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="bu5iTPpGUUyw0LDB3Mps-27" value="Die zwei Objektarten haben unterschiedliche Lebenszyklen. Wenn wir eine Maschine umbauen, dann kann es sein, dass ungenutzte Links existieren und wir die Mac-Adressen und welcher Port das von außen ist nicht verlieren wollen" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="290" width="170" height="140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
